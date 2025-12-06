@@ -176,14 +176,12 @@ Body:
 This returns:
 
 ```json
+
 {
-  "access_token": "<JWT_TOKEN>",
-  "user": {
-    "id": 1,
-    "username": "john",
-    "role": "user"
-  }
+  "username": "john",
+  "password": "123456"
 }
+
 ```
 
 Copy the `access_token`.
@@ -223,6 +221,10 @@ Body:
 ### ✔ Get All Tasks
 
 **GET /tasks**
+
+**GET /tasks** **Pagination**
+GET /tasks?page=1&limit=5&completed=false
+
 
 ### ✔ Get Single Task
 
